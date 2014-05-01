@@ -12,18 +12,24 @@ Certain generators are installed by default in Sails, but they can be overridden
 
 <!--
 ```sh
-$ npm install sails-generate-bower
+$ npm install sails-generate-bower -g
 ```
 -->
 
 
-### Production Usage
+### Usage
 
-##### On the command line
+##### New project setup
 
 ```sh
-$ sails generate bower
+$ sails new myProject              # create a new sails project
+$ cd myProject
+$ sails generate bower             # generate/modify the necessary files
+$ npm install                      # install modules
+$ bower install bootstrap --save   # install required bower packages
+$ sails lift                       # lift the server
 ```
+Go to (http://localhost:1337)[http://localhost:1337] and view page source, and you'll see the CSS and JS files injected into the template.
 
 ##### In a node script
 
@@ -40,20 +46,9 @@ sailsgen(require('sails-generate-bower'), scope, function (err) {
 });
 ```
 
-
-### Development
-
-To get started quickly and see this generator in action, run the `bin/index.js` script:
-
-```sh
-$ git clone YOUR_FORK_OF_THIS_REPO sails-generate-bower-fork
-$ cd sails-generate-bower-fork
-$ npm install
-$ node ./bin
-```
-
-`bin/index.js` is a simple script, bundled only for convenience, that runs the generator with hard-coded scope variables.  Please feel free to modify that file however you like!  Also see `CONTRIBUTING.md` for more information on overriding/enhancing generators.
-
+### Credits
+- [The Sails, the Grunt and the Bower](http://milanito.github.io/sails%20javascript/2014/01/10/the-sails-the-grunt-and-the-bower/), by [Matthieu Rondeau](http://milanito.github.io/)
+- [sails-generate-gulp-bower](https://github.com/PaulAvery/sails-generate-gulp-bower), by [Paul Avery](https://github.com/PaulAvery)
 
 
 ### Questions?
@@ -75,8 +70,7 @@ See `FAQ.md`.
 ### License
 
 **[MIT](./LICENSE)**
-&copy; 2014 [balderdashy](http://github.com/balderdashy) & [contributors]
-[Mike McNeil](http://michaelmcneil.com), [Balderdash](http://balderdash.co) & contributors
+&copy; 2014 [James Smtih](http://github.com/smies)
 
 [Sails](http://sailsjs.org) is free and open-source under the [MIT License](http://sails.mit-license.org/).
 
