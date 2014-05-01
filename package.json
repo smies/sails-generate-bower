@@ -1,8 +1,10 @@
 {
   "name": "sails-generate-bower",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Add bower support for Sails.",
   "main": "lib/index.js",
+  "homepage": "http://github.com/smies/sails-generate-bower",
+  "url" : "http://github.com/smies/sails-generate-bower/issues",
   "scripts": {
     "test": "mocha"
   },

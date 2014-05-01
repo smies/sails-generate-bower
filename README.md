@@ -29,7 +29,7 @@ $ npm install                      # install modules
 $ bower install bootstrap --save   # install required bower packages
 $ sails lift                       # lift the server
 ```
-Go to (http://localhost:1337)[http://localhost:1337] and view page source, and you'll see the CSS and JS files injected into the template.
+Go to [http://localhost:1337](http://localhost:1337) and view page source, and you'll see the CSS and JS files injected into the template.
 
 ##### In a node script
 
