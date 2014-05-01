@@ -1,0 +1,32 @@
+{
+  "name": "sails-generate-bower",
+  "version": "0.0.1",
+  "description": "Add bower support for Sails.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "bower",
+    "generator",
+    "sails",
+    "generate",
+    "plugin"
+  ],
+  "author": "smies",
+  "license": "MIT",
+  "dependencies": {
+  	"lodash": ">=2.4.x",
+  	"merge-defaults": ">=0.1.0"
+  },
+  "devDependencies": {
+    "sails-generate": "*",
+    "reportback": "*",
+    "fs-extra": "*"
+  },
+  "sailsGenerator": {
+    "type": "bower",
+    "behavior": "overrides `sails generate bower`",
+    "sailsVersion": "~0.10.0"
+  }
+}
